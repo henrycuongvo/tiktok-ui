@@ -9,7 +9,7 @@ const publicRoutes = [
   { path: "/", component: Home },
   { path: "/following", component: Following },
   { path: "/profile", component: Profile },
-  { path: "/search", component: Search, layout: null },
+  { path: "/search", component: Search },
   { path: "/upload", component: Upload, layout: HeaderOnly },
 ];
 
