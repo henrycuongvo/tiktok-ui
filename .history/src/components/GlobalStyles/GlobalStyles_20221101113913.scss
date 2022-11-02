@@ -8,7 +8,6 @@
   --default-layout-width: 1150px;
   --black: #000;
   --line-height: 22px;
-  --text-color: #333;
 }
 * {
   box-sizing: border-box;
@@ -23,14 +22,4 @@ body {
   font-family: "Roboto", sans-serif;
   line-height: 1.5;
   text-rendering: optimizeSpeed;
-}
-button,
-input,
-[tabindex] {
-  outline: none;
-  border: none;
-}
-a[href] {
-  color: var(--text-color);
-  text-decoration: none;
 }

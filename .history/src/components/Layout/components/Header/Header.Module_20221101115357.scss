@@ -1,7 +1,5 @@
 .wrapper {
   --search-button-radius: 92px;
-  --search-height: 46px;
-  --search-width: 361px;
   width: 100%;
   height: var(--default-layout-header-height, 60px);
   box-shadow: 0px 1px 1px rgb(0 0 0 / 12%);
@@ -22,57 +20,30 @@
   align-items: center;
 }
 .search {
-  width: var(--search-width);
-  height: var(--search-height);
-  position: relative;
+  width: 361px;
+  height: 46px;
+  display: flex;
   padding-left: 16px;
   background: rgba(22, 24, 35, 0.06);
   border-radius: var(--search-button-radius);
 
   input {
-    width: 250px;
-    height: var(--search-height);
+    flex: 1;
+    height: 100%;
     color: var(--black);
     font-size: 1.6rem;
     line-height: var(--line-height);
     background-color: transparent;
   }
-  input:not(:placeholder-shown) ~ .search-btn {
-    color: rgba(22, 24, 35, 0.75);
-  }
-  &::after {
-    content: "";
-    position: absolute;
-    height: calc(var(--search-height) - 18px);
-    width: 2px;
-    right: 52px;
-    top: 9px;
-    background-color: rgba(22, 24, 35, 0.12);
-  }
-  &:focus-within {
-    border: 1.5px solid rgba(22, 24, 35, 0.2);
-  }
 }
-.clear,
-.loading {
-  position: absolute;
-  top: 50%;
-  right: 90px;
-  transform: translateY(-50%);
-  color: rgba(22, 24, 35, 0.34);
-  background-color: transparent;
+.clear {
 }
 .search-btn {
   width: 52px;
   height: 100%;
-  position: relative;
-  right: -18px;
   border-top-right-radius: var(--search-button-radius);
   border-bottom-right-radius: var(--search-button-radius);
-  font-size: 1.8rem;
-  color: rgba(22, 24, 35, 0.34);
-  &:hover {
-    cursor: pointer;
+  :hover {
     background: rgba(22, 24, 35, 0.03);
   }
 }
