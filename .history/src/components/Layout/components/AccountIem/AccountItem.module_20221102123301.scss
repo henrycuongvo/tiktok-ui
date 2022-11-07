@@ -1,0 +1,23 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+}
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0px 12px 0px 0px;
+}
+.info {
+  flex: 1;
+  text-align: start;
+}
+.name {
+  font-size: 1.6rem;
+  line-height: var(--line-height);
+  font-weight: 600;
+}
+
+.username {
+}
